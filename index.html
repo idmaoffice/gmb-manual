@@ -1,0 +1,330 @@
+<?php $lang = ru ?>
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IDMA | Подарки | Как развивать Google My Business своими руками</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <?php
+    include_once '/home/write365/idma.ltd/www/code/common/favicon.php';
+    include_once '/home/write365/idma.ltd/www/code/common/general.php';
+    ?>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="wrapper-left">
+                        <div class="logo">
+                            <img src="img/logo.svg" alt="logo">
+                            <span class="logo-main">
+                                IDMA<br>
+                                <span>LTD</span>
+                            </span>
+                            <span>
+                                international digital<br>
+                                marketing agency limited
+                            </span>
+                        </div>
+                        <div class="fapkl">
+                            <div class="fapkl-img">
+                                <img src="img/fapkl.svg" alt="fapkl">
+                            </div>
+                            <div class="fapkl-text">
+                                <img src="img/FAPKL-text.svg" alt="fapkl-text">
+                                <span>
+                                    free author's library<br>
+                                    of practical knowledge
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="wrapper-right">
+                        <p class="manual">
+                            Бесплатный авторский мануал<br> по GMB полная версия
+                        </p>
+                        <span class="update">
+                            Файл обновлен
+                            <span>14 ноября 2019</span>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="first-sect">
+            <div class="container">
+                <h1>
+                    Как <span class="green">самостоятельно</span> получить поток<br> клиентов из Google и Google Maps
+                </h1>
+                <h2 class="h2-custom">
+                    Узнайте <b>работающие стратегии</b> ведения Google My Business и продвижения в 2019-2020 гг, научитесь <b>массово привлекать клиентов</b> из Интернета своими силами<br> <b>в автоматическом режиме</b>.
+                </h2>
+                <div class="row">
+                    <div class="col-lg-7 col-12">
+                        <img src="img/book.svg" alt="book">
+                        <p class="under-img">Наше предложение: <b>прозрачное, чистое, честное, бесплатное</b>.<br> Развивайтесь и процветайте вооружаясь нашим опытом!</p>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <form class="main-form" id="form-main">
+                            <h2>Оставьте контакты</h2>
+                            <h3>Чтобы получить все подарки на почту и преимущетсва в продвижении </h3>
+                            <input type="text" name="telefono" required="required" placeholder="Ваш телефон">
+                            <input type="text" name="posto" required="required" placeholder="Ваш E-mail">
+
+                            <div>
+                                <input type="checkbox" name="one" id="one" checked>
+                                <label for="one">Получить на почту файл книги</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="two" id="two" checked>
+                                <label for="two">Получить ссылку для прямого скачивания</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="three" id="three" checked>
+                                <label for="three">Подписаться на уведомления об обновлениях библиотеки</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="four" id="four" checked>
+                                <label for="four">Узнавать первым об акциях</label>
+                            </div>
+                            <div style="display: none;">
+                                <input type="text" name="name">
+                                <input type="email" name="mail">
+                                <input type="email" name="email">
+                                <input type="text" name="phone">
+                                <input type="text" name="tel">
+                                <input type="text" name="url">
+                            </div>
+
+                            <div style="display: none;">
+                                <input type="text" name="identigilo" value="Мануал продвижения Google My Business"><?php /* Заголовок страницы */ ?>
+                                <input type="text" name="gpixel" value="gmb-manual"><?php /* Параметр для гугл пикселя */ ?>
+                                <input type="text" name="traduko" value="ru"><?php /* Язык страницы */ ?>
+                                <input type="text" name="ago" value="Оставьте контакты"><?php /* название формы (узнать больше; получить подарок; задать вопрос) */ ?>
+                                <input type="text" name="loko" value="Форма на первом экране"><?php /* расположение формы на странице (форма в блоке на первом экране; попап с кнопки детали тарифа Х на экране Тарифы) */ ?>
+                                <input type="text" name="pago" value="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>"><?php /* url страницы с формой */ ?>
+                                <input type="text" name="interkonsento" value=""><?php /* галочка соглашения с политикой конфиденциальности */ ?>
+                            </div>
+                            <button type="submit" class="btn">Получить книгу на почту</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="second-sect">
+            <div class="container">
+                <h2>Для кого наша литература</h2>
+                <h3>Мы создаем мануалы таким образом, чтобы они были полезны каждому:</h3>
+                <div class="pyramid">
+                    <div class="pyramid-item-1 pyramid-item">
+                        <span>Премиум ТОП-1 компаний<br>с мировым признанием</span>
+                    </div>
+                    <div class="wrapper-block-2 wrapper-block">
+                        <div class="pyramid-item-2 pyramid-item">
+                            <span>Онлайн-бизнеса</span>
+                        </div>
+                        <div class="pyramid-item-3 pyramid-item">
+                            <span>Оффлайн-бизнеса</span>
+                        </div>
+                    </div>
+                    <div class="wrapper-block-3 wrapper-block">
+                        <div class="pyramid-item-4 pyramid-item">
+                            <span>Крупный бизнес</span>
+                        </div>
+                        <div class="pyramid-item-5 pyramid-item">
+                            <span>Средний бизнес</span>
+                        </div>
+                        <div class="pyramid-item-6 pyramid-item">
+                            <span>Малый бизнес</span>
+                        </div>
+                    </div>
+                    <div class="wrapper-block-4 wrapper-block">
+                        <div class="pyramid-item-7 pyramid-item">
+                            <span>Маркетологи</span>
+                        </div>
+                        <div class="pyramid-item-8 pyramid-item">
+                            <span>Владельцы<br>бизнеса</span>
+                        </div>
+                        <div class="pyramid-item-9 pyramid-item">
+                            <span>Управляющие<br>специалисты</span>
+                        </div>
+                        <div class="pyramid-item-10 pyramid-item">
+                            <span>Руководители всех<br>звеньев</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="third-sect">
+            <div class="container">
+                <div class="block-left">
+                    <h2>Наша литература - для Вас!</h2>
+                    <h3>Да-да, для тебя лично! Спеши скачать и внедрить!</h3>
+                </div>
+                <div class="block-right">
+                    <a href="#form-main" class="btn btn-scroll">Скачать PDF книгу</a>
+                </div>
+            </div>
+        </section>
+        <section class="fourth-sect">
+            <div class="container">
+                <h2>Что вы узнаете?</h2>
+                <h3>Некоторые вопросы, ответы на которые вы найдете в мануале:</h3>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p>Как создать точку с нуля</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p>Как заполнить данные</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p>Как отвечать на отзывы</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p>Как повысить лояльность</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p>Как конкуренты вас побеждают</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p>Как, что, когда публиковать</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fifth-sect">
+            <div class="container">
+                <h2>Эту информацию единой выжимкой не даст вам никто!</h2>
+                <h3>Мы давно и усердно работаем в этом направлении, безвозмездно делимся своим опытом</h3>
+                <div class="count">
+                    <div class="count-nubm">
+                        <span class="num">100+</span>
+                        <p>тестируемых аккаунтов</p>
+                    </div>
+                    <div class="count-nubm">
+                        <span class="num">2+</span>
+                        <p>лет опыта в нише</p>
+                    </div>
+                    <div class="count-nubm">
+                        <span class="num">6</span>
+                        <p>экспертов авторов</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sixth-sect">
+            <div class="container">
+                <h2>Книги нашей библиотеки качают по всему миру!</h2>
+                <h3>Отслеживая IP-адреса обращений мы собираем интересную статистику, которая радует!</h3>
+                <div class="maped">
+                    <img src="img/map.svg" alt="map">
+                    <img src="img/item-pdf.svg" alt="pdf" class="item-pdf-1 item-pdf">
+                    <img src="img/item-pdf.svg" alt="pdf" class="item-pdf-2 item-pdf">
+                    <img src="img/item-pdf.svg" alt="pdf" class="item-pdf-3 item-pdf">
+                    <img src="img/item-pdf.svg" alt="pdf" class="item-pdf-4 item-pdf">
+                    <img src="img/item-pdf.svg" alt="pdf" class="item-pdf-5 item-pdf">
+                    <img src="img/item-pdf.svg" alt="pdf" class="item-pdf-6 item-pdf">
+                    <img src="img/item-pdf.svg" alt="pdf" class="item-pdf-7 item-pdf">
+                    <img src="img/item-pdf.svg" alt="pdf" class="item-pdf-8 item-pdf">
+                    <img src="img/item-pdf.svg" alt="pdf" class="item-pdf-9 item-pdf">
+                    <img src="img/item-pdf.svg" alt="pdf" class="item-pdf-10 item-pdf">
+                </div>
+            </div>
+        </section>
+        <section class="third-sect seventh-sect">
+            <div class="container">
+                <div class="block-left">
+                    <h2>Вы можете скачать книгу</h2>
+                    <h3>и получить преимущество прямо сейчас</h3>
+                </div>
+                <div class="block-right">
+                    <a class="btn btn-scroll" href="#form-main">Скачать PDF книгу</a>
+                </div>
+            </div>
+        </section>
+        <section class="eighth-sect">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <p>руководитель проектых групп Гугл Мой Бизнес</p>
+                        <h2>Александра Пархоменко,<br><span>OL IDMA GMB</span></h2>
+                        <a href="tel:+380671984520">+38 067 198 45 20</a>
+                        <div class="oneline">
+                            <div>
+                                <a href="https://t.me/idma_ol_gmb" target="_blank"><img src="img/telegram.svg" alt="telegram"></a>
+                                <a href="viber://chat?number=380671984520" target="_blank"><img src="img/viber.svg" alt="viber"></a>
+                                <a href="whatsapp://send?text=&phone=+380671984520&abid=+380671984520" target="_blank"><img src="img/wats.svg" alt="wats"></a>
+                            </div>
+                            <span>*украинский телефон, оператор “Киевстар”</span>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <p>Присоединяйтесь к нам в социальных сетях</p>
+                        <div class="oneline">
+                            <a href="https://www.linkedin.com/company/idma-limited/" target="_blank"><img src="https://gift.idma.ltd/gmb-manual/img/in.svg" alt="in"></a>
+                            <a href="https://vk.com/idmaltd" target="_blank"><img src="https://gift.idma.ltd/gmb-manual/img/vk.svg" alt="vk"></a>
+                            <a href="https://www.facebook.com/idma.ltd/" target="_blank"><img src="https://gift.idma.ltd/gmb-manual/img/facebook.svg" alt="facebook"></a>
+                            <a href="https://www.instagram.com/IDMA.ltd/" target="_blank"><img src="https://gift.idma.ltd/gmb-manual/img/inst.svg" alt="instagram"></a>
+                            <a href="https://twitter.com/IDMA_Ltd/" target="_blank"><img src="https://gift.idma.ltd/gmb-manual/img/twitter.svg" alt="twitter"></a>
+                        </div>
+                        <form  class="form-sign">
+                            <p>Подписаться на информирование о появлениеи<br> новых книг и информацию об акциях</p>
+                            <div>
+                                <input type="text" id="postor" name="posto" required="required" placeholder="Ваш E-mail">
+                                <button type="submit" class="btn">Подписаться</button>
+                            </div>
+                            <div style="display: none;">
+                                <input type="text" name="name">
+                                <input type="email" name="mail">
+                                <input type="email" name="email">
+                                <input type="text" name="phone">
+                                <input type="text" name="tel">
+                                <input type="text" name="url">
+                            </div>
+
+                            <div style="display: none;">
+                                <input type="text" name="identigilo" value="Мануал продвижения Google My Business"><?php /* Заголовок страницы */ ?>
+                                <input type="text" name="gpixel" value="gift-gmb-book"><?php /* Параметр для гугл пикселя */ ?>
+                                <input type="text" name="traduko" value="ru"><?php /* Язык страницы */ ?>
+                                <input type="text" name="ago" value="Получить мануал"><?php /* название формы (узнать больше; получить подарок; задать вопрос) */ ?>
+                                <input type="text" name="loko" value="Нижняя форма"><?php /* расположение формы на странице (форма в блоке на первом экране; попап с кнопки детали тарифа Х на экране Тарифы) */ ?>
+                                <input type="text" name="pago" value="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>"><?php /* url страницы с формой */ ?>
+                                <input type="text" name="interkonsento" value=""><?php /* галочка соглашения с политикой конфиденциальности и прочим */ ?>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <?php include_once '/home/write365/idma.ltd/www/code/common/footer.php'; ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("a.btn-scroll").click(function() {
+                var elementClick = $(this).attr("href")
+                var destination = $(elementClick).offset().top;
+                jQuery("html:not(:animated),body:not(:animated)").animate({
+                    scrollTop: destination
+                }, 800);
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>
